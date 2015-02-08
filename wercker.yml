@@ -1,1 +1,7 @@
 box: wercker/default
+build:
+  steps:
+    - arjen/hugo-build:
+        version: 1.0.2
+        theme: herring-cove
+        flags: --buildDrafts=true
