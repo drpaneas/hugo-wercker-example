@@ -2,7 +2,7 @@ box: wercker/default
 build:
   steps:
     - arjen/hugo-build:
-        version: 1.0.2
+        version: 0.12
         theme: herring-cove
         flags: --buildDrafts=true
 deploy:
@@ -11,3 +11,4 @@ deploy:
         token: $GIT_TOKEN
         domain: hugo-wercker.ig.nore.me
         basedir: public
+
